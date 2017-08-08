@@ -17,7 +17,8 @@ Step by step guide
 - Have a working Python environment
 - Install MySQL Connector/Python as documented in [MySQL Connector/Python Developer Guide](https://dev.mysql.com/doc/connector-python/en/)
 - Modify the source code to include connection parameters of your RDS MySQL
- ```   config = {
+ ```
+     config = {
         'host': '_host_ip_',
         'port': 8635,
         'database': 'test',
