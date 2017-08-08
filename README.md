@@ -8,7 +8,7 @@ Below Open Telekom Cloud Relational Database services are currently covered by e
 ### Python - examples/MySQL-inserts.py ###
 Please refer the [MySQL Connector/Python Developer Guide](https://dev.mysql.com/doc/connector-python/en/) documentation article that describes how to install and configure MySQL Connector/Python, a self-contained Python driver for communicating with MySQL servers, and how to use it to develop database applications. 
 
-Code example is based on [mysql-connector-python/examples/inserts.py]https://github.com/mysql/mysql-connector-python/blob/master/examples/inserts.py, but TABLE creation is modified to increase compatibility
+Code example is based on [mysql-connector-python/examples/inserts.py](https://github.com/mysql/mysql-connector-python/blob/master/examples/inserts.py), but TABLE creation is modified to increase compatibility
 
 Step by step guide
 - Create MySQL database on OTC 
