@@ -12,7 +12,7 @@ Code example is based on [mysql-connector-python/examples/inserts.py](https://gi
 
 Step by step guide
 - Create MySQL database on OTC 
-- Create ECS and setup connection with MySQL client using the User guide
+- Create ECS and setup connection with MySQL client using the [User guide](https://docs.otctest.t-systems.com/en-us/rds_dld/index.html)
 - Create database test as it's used in the examples
 - Have a working Python environment
 - Install MySQL Connector/Python as documented in [MySQL Connector/Python Developer Guide](https://dev.mysql.com/doc/connector-python/en/)
