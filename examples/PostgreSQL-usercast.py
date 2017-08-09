@@ -15,14 +15,14 @@
 
 ## put in DSN your DSN string
 
-DSN = 'dbname=test'
+DSN = "host='localhost' port=8635 dbname='testdb' user='root' password='secret'"
 
 ## don't modify anything below this line (except for experimenting)
 
 import sys
 import psycopg2
 import psycopg2.extensions
-import whrandom
+import random
 
 # importing psycopg.extras will give us a nice tuple adapter: this is wrong
 # because the adapter is meant to be used in SQL IN clauses while we use
@@ -105,11 +105,11 @@ psycopg2.extensions.register_type(BOX)
 
 # now insert 100 random data (2 points and a box in each row)
 for i in range(100):
-    p1 = (whrandom.randint(0,100), whrandom.randint(0,100))
-    p2 = (whrandom.randint(0,100), whrandom.randint(0,100))
+    p1 = (random.randint(0,100), random.randint(0,100))
+    p2 = (random.randint(0,100), random.randint(0,100))
     b = Rect()
-    b.from_points(whrandom.randint(0,100), whrandom.randint(0,100),
-                  whrandom.randint(0,100), whrandom.randint(0,100))
+    b.from_points(random.randint(0,100), random.randint(0,100),
+                  random.randint(0,100), random.randint(0,100))
     curs.execute("INSERT INTO test_cast VALUES ('%(p1)s', '%(p2)s', %(box)s)",
                  {'box':b, 'p1':p1, 'p2':p2})
 print "Added 100 boxed to the database"
