@@ -45,7 +45,7 @@ Step by step guide
 - Create ECS and setup connection with PostgreSQL client using the [User guide](https://docs.otctest.t-systems.com/en-us/rds_dld/index.html)
 - Create database test as it's used in the examples
 - Have a working Python environment
-- Install Psycopg2 as documented in [Psycopg2 wiki](https://wiki.postgresql.org/wiki/Psycopg2)
+- Install Psycopg2 as documented in [Psycopg2 wiki](https://wiki.postgresql.org/wiki/Psycopg2) more details and installation options at [Psycopg dev documentation](http://initd.org/psycopg/docs/install.html)
 - Modify the source code to include connection parameters of your RDS
  ```
 ## put in DSN your DSN string
