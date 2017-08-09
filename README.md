@@ -38,7 +38,7 @@ Example using MySQL Connector/Python showing:
 ### Python - examples/PostgreSQL-usercast.py ###
 Please refer the [Psycopg2 Tutorial](https://wiki.postgresql.org/wiki/Psycopg2) documentation article that describes how to install and configure Psycopg2 a PostgreSQL database adapter for the Python programming language, and [how to use it to develop database applications](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial). 
 
-Code example is based on [psycopg2/examples/usercast.py](https://github.com/psycopg/psycopg2/blob/master/examples/usercast.py), but TABLE creation is modified to increase compatibility
+Code example is based on [psycopg2/examples/usercast.py](https://github.com/psycopg/psycopg2/blob/master/examples/usercast.py), but modified to increase compatibility by using standard random library 
 
 Step by step guide
 - Create PostgreSQL database on OTC 
