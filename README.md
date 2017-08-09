@@ -50,7 +50,7 @@ Step by step guide
  ```
 ## put in DSN your DSN string
 
-DSN = 'dbname=test'
+DSN = "host='_host_ip_' port=8635 dbname='testdb' user='root' password='secret'"
 ```        
 - Execute the example code from examples/PostgreSQL-usercast.py
 
