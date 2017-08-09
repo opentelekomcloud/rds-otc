@@ -1,6 +1,7 @@
 ## RDS connection examples for Open Telekom Cloud ##
 Below Open Telekom Cloud Relational Database services are currently covered by examples:
 - MySQL
+- PostgreSQ:
 
 
 ## MySQL ##
@@ -31,4 +32,31 @@ Example using MySQL Connector/Python showing:
 * dropping and creating a table
 * inserting 3 rows using executemany()
 * selecting data and showing it
+
+## PostgreSQL ##
+
+### Python - examples/PostgreSQL-usercast.py ###
+Please refer the [Psycopg2 Tutorial](https://wiki.postgresql.org/wiki/Psycopg2) documentation article that describes how to install and configure Psycopg2 a PostgreSQL database adapter for the Python programming language, and [how to use it to develop database applications](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial). 
+
+Code example is based on [psycopg2/examples/usercast.py](https://github.com/psycopg/psycopg2/blob/master/examples/usercast.py), but TABLE creation is modified to increase compatibility
+
+Step by step guide
+- Create PostgreSQL database on OTC 
+- Create ECS and setup connection with PostgreSQL client using the [User guide](https://docs.otctest.t-systems.com/en-us/rds_dld/index.html)
+- Create database test as it's used in the examples
+- Have a working Python environment
+- Install Psycopg2 as documented in [Psycopg2 wiki](https://wiki.postgresql.org/wiki/Psycopg2)
+- Modify the source code to include connection parameters of your RDS
+ ```
+## put in DSN your DSN string
+
+DSN = 'dbname=test'
+```        
+- Execute the example code from examples/PostgreSQL-usercast.py
+
+Example using Psycopg2 showing:
+* dropping and creating a table
+* inserting 100 rows
+* selecting data and showing it
+
 
