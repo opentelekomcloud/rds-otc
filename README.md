@@ -63,7 +63,7 @@ Example using Psycopg2 showing:
 ## MS SQLServer ##
 
 ### Python - examples/mssql-inserts.py ###
-Please refer the [Pymssql Introduction](http://pymssql.org/en/stable/intro.html) documentation article that describes how to install and configure Psycopg2 a PostgreSQL database adapter for the Python programming language, and [how to use it to develop database applications](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial). 
+Please refer the [Pymssql Introduction](http://pymssql.org/en/stable/intro.html) documentation article that describes how to install and configure Pymssql a MS SQLServer database adapter for the Python programming language, and [how to use it to develop database applications](http://pymssql.org/en/stable/pymssql_examples.html). 
 
 Code example is based on [Pymssql examples](http://pymssql.org/en/stable/pymssql_examples.html)
 
@@ -72,7 +72,7 @@ Step by step guide
 - Create ECS and setup connection with MS SQLServer client using the [User guide](https://docs.otctest.t-systems.com/en-us/rds_dld/index.html)
 - Check connectivity tempdb database will be used in the examples
 - Have a working Python environment
-- Install Pymssql as documented in [Pymssql wiki](http://pymssql.org/en/stable/intro.html#install) more details and installation options at [Pymssql  building and developing](http://pymssql.org/en/stable/building_and_developing.html)
+- Install Pymssql as documented in [Pymssql Installation](http://pymssql.org/en/stable/intro.html#install) more details and installation options at [Pymssql  building and developing](http://pymssql.org/en/stable/building_and_developing.html)
 - Set env variables to set connection parameters of your RDS
  ```
 export PYMSSQL_TEST_SERVER=_host_ip_:8433
