@@ -1,7 +1,8 @@
 ## RDS connection examples for Open Telekom Cloud ##
 Below Open Telekom Cloud Relational Database services are currently covered by examples:
 - MySQL
-- PostgreSQ:
+- PostgreSQL
+- MS SQLServer
 
 
 ## MySQL ##
