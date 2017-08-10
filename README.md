@@ -59,4 +59,28 @@ Example using Psycopg2 showing:
 * inserting 100 rows
 * selecting data and showing it
 
+## MS SQLServer ##
 
+### Python - examples/mssql-inserts.py ###
+Please refer the [Pymssql Introduction](http://pymssql.org/en/stable/intro.html) documentation article that describes how to install and configure Psycopg2 a PostgreSQL database adapter for the Python programming language, and [how to use it to develop database applications](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial). 
+
+Code example is based on [Pymssql examples](http://pymssql.org/en/stable/pymssql_examples.html)
+
+Step by step guide
+- Create MS SQLServer database on OTC 
+- Create ECS and setup connection with MS SQLServer client using the [User guide](https://docs.otctest.t-systems.com/en-us/rds_dld/index.html)
+- Check connectivity tempdb database will be used in the examples
+- Have a working Python environment
+- Install Pymssql as documented in [Pymssql wiki](http://pymssql.org/en/stable/intro.html#install) more details and installation options at [Pymssql  building and developing](http://pymssql.org/en/stable/building_and_developing.html)
+- Set env variables to set connection parameters of your RDS
+ ```
+export PYMSSQL_TEST_SERVER=_host_ip_:8433
+export PYMSSQL_TEST_USERNAME=rdsuser
+export PYMSSQL_TEST_PASSWORD=_secret_
+```        
+- Execute the example code from examples/mssql-inserts.py
+
+Example using Pymssql showing:
+* dropping and creating a table
+* inserting 3 rows
+* selecting data and showing it
